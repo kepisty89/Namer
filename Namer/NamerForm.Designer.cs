@@ -75,7 +75,7 @@
             this.mainTableLayoutPanel.ColumnCount = 3;
             this.mainTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 31.15942F));
             this.mainTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 68.84058F));
-            this.mainTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 191F));
+            this.mainTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 193F));
             this.mainTableLayoutPanel.Controls.Add(this.directoryGroupBox, 0, 0);
             this.mainTableLayoutPanel.Controls.Add(this.filesGroupBox, 0, 1);
             this.mainTableLayoutPanel.Controls.Add(this.patternGroupBox, 0, 2);
@@ -167,7 +167,7 @@
             this.filesGroupBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.filesGroupBox.Location = new System.Drawing.Point(3, 63);
             this.filesGroupBox.Name = "filesGroupBox";
-            this.filesGroupBox.Size = new System.Drawing.Size(641, 510);
+            this.filesGroupBox.Size = new System.Drawing.Size(639, 510);
             this.filesGroupBox.TabIndex = 12;
             this.filesGroupBox.TabStop = false;
             this.filesGroupBox.Text = "Files";
@@ -188,7 +188,7 @@
             this.filesTableLayoutPanel.RowCount = 2;
             this.filesTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90.0862F));
             this.filesTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.913794F));
-            this.filesTableLayoutPanel.Size = new System.Drawing.Size(635, 491);
+            this.filesTableLayoutPanel.Size = new System.Drawing.Size(633, 491);
             this.filesTableLayoutPanel.TabIndex = 0;
             // 
             // fileListBox
@@ -202,7 +202,7 @@
             this.fileListBox.Location = new System.Drawing.Point(3, 3);
             this.fileListBox.Name = "fileListBox";
             this.fileListBox.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.fileListBox.Size = new System.Drawing.Size(629, 436);
+            this.fileListBox.Size = new System.Drawing.Size(627, 436);
             this.fileListBox.TabIndex = 7;
             // 
             // filesButtonsFlowLayoutPanel
@@ -212,7 +212,7 @@
             this.filesButtonsFlowLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.filesButtonsFlowLayoutPanel.Location = new System.Drawing.Point(3, 445);
             this.filesButtonsFlowLayoutPanel.Name = "filesButtonsFlowLayoutPanel";
-            this.filesButtonsFlowLayoutPanel.Size = new System.Drawing.Size(629, 43);
+            this.filesButtonsFlowLayoutPanel.Size = new System.Drawing.Size(627, 43);
             this.filesButtonsFlowLayoutPanel.TabIndex = 8;
             // 
             // getPatternButton
@@ -234,7 +234,7 @@
             this.patternGroupBox.Location = new System.Drawing.Point(3, 579);
             this.patternGroupBox.Name = "patternGroupBox";
             this.mainTableLayoutPanel.SetRowSpan(this.patternGroupBox, 2);
-            this.patternGroupBox.Size = new System.Drawing.Size(641, 72);
+            this.patternGroupBox.Size = new System.Drawing.Size(639, 72);
             this.patternGroupBox.TabIndex = 13;
             this.patternGroupBox.TabStop = false;
             this.patternGroupBox.Text = "Renaming";
@@ -256,7 +256,7 @@
             this.replacementTableLayoutPanel.RowCount = 2;
             this.replacementTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.replacementTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.replacementTableLayoutPanel.Size = new System.Drawing.Size(635, 53);
+            this.replacementTableLayoutPanel.Size = new System.Drawing.Size(633, 53);
             this.replacementTableLayoutPanel.TabIndex = 0;
             // 
             // patternComboBox
@@ -267,7 +267,7 @@
             this.patternComboBox.FormattingEnabled = true;
             this.patternComboBox.Location = new System.Drawing.Point(102, 29);
             this.patternComboBox.Name = "patternComboBox";
-            this.patternComboBox.Size = new System.Drawing.Size(262, 21);
+            this.patternComboBox.Size = new System.Drawing.Size(261, 21);
             this.patternComboBox.TabIndex = 1;
             // 
             // regExCheckBox
@@ -289,16 +289,16 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.replacementComboBox.FormattingEnabled = true;
-            this.replacementComboBox.Location = new System.Drawing.Point(370, 29);
+            this.replacementComboBox.Location = new System.Drawing.Point(369, 29);
             this.replacementComboBox.Name = "replacementComboBox";
-            this.replacementComboBox.Size = new System.Drawing.Size(262, 21);
+            this.replacementComboBox.Size = new System.Drawing.Size(261, 21);
             this.replacementComboBox.TabIndex = 2;
             // 
             // replacementLabel
             // 
             this.replacementLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.replacementLabel.AutoSize = true;
-            this.replacementLabel.Location = new System.Drawing.Point(370, 13);
+            this.replacementLabel.Location = new System.Drawing.Point(369, 13);
             this.replacementLabel.Name = "replacementLabel";
             this.replacementLabel.Size = new System.Drawing.Size(72, 13);
             this.replacementLabel.TabIndex = 10;
@@ -319,9 +319,9 @@
             this.startButton.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.startButton.Location = new System.Drawing.Point(650, 618);
+            this.startButton.Location = new System.Drawing.Point(648, 618);
             this.startButton.Name = "startButton";
-            this.startButton.Size = new System.Drawing.Size(186, 33);
+            this.startButton.Size = new System.Drawing.Size(188, 33);
             this.startButton.TabIndex = 3;
             this.startButton.Text = "Start!";
             this.startButton.UseVisualStyleBackColor = true;
@@ -358,7 +358,7 @@
             this.applyToAllCheckBox.Checked = true;
             this.applyToAllCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
             this.applyToAllCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.applyToAllCheckBox.Location = new System.Drawing.Point(650, 579);
+            this.applyToAllCheckBox.Location = new System.Drawing.Point(648, 579);
             this.applyToAllCheckBox.Name = "applyToAllCheckBox";
             this.applyToAllCheckBox.Size = new System.Drawing.Size(123, 33);
             this.applyToAllCheckBox.TabIndex = 15;
@@ -369,9 +369,9 @@
             // 
             this.fileOperationsGroupBox.Controls.Add(this.tableLayoutPanel1);
             this.fileOperationsGroupBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.fileOperationsGroupBox.Location = new System.Drawing.Point(650, 63);
+            this.fileOperationsGroupBox.Location = new System.Drawing.Point(648, 63);
             this.fileOperationsGroupBox.Name = "fileOperationsGroupBox";
-            this.fileOperationsGroupBox.Size = new System.Drawing.Size(186, 510);
+            this.fileOperationsGroupBox.Size = new System.Drawing.Size(188, 510);
             this.fileOperationsGroupBox.TabIndex = 16;
             this.fileOperationsGroupBox.TabStop = false;
             this.fileOperationsGroupBox.Text = "File operations";
@@ -396,7 +396,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(180, 491);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(182, 491);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // manualRenameButton
@@ -406,7 +406,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.manualRenameButton.Location = new System.Drawing.Point(3, 3);
             this.manualRenameButton.Name = "manualRenameButton";
-            this.manualRenameButton.Size = new System.Drawing.Size(174, 43);
+            this.manualRenameButton.Size = new System.Drawing.Size(176, 43);
             this.manualRenameButton.TabIndex = 0;
             this.manualRenameButton.Text = "Rename";
             this.manualRenameButton.UseVisualStyleBackColor = true;
@@ -418,7 +418,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.deleteButton.Location = new System.Drawing.Point(3, 52);
             this.deleteButton.Name = "deleteButton";
-            this.deleteButton.Size = new System.Drawing.Size(174, 43);
+            this.deleteButton.Size = new System.Drawing.Size(176, 43);
             this.deleteButton.TabIndex = 1;
             this.deleteButton.Text = "Delete";
             this.deleteButton.UseVisualStyleBackColor = true;
@@ -434,6 +434,7 @@
             this.MinimumSize = new System.Drawing.Size(855, 720);
             this.Name = "NamerForm";
             this.Text = "Namer, v0.1";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.NamerFormClosing);
             this.mainTableLayoutPanel.ResumeLayout(false);
             this.mainTableLayoutPanel.PerformLayout();
             this.directoryGroupBox.ResumeLayout(false);

@@ -8,6 +8,8 @@
     using System.Threading;
     using System.Windows.Forms;
 
+    using Namer.Properties;
+
     /// <summary>
     /// The main form.
     /// </summary>
@@ -25,13 +27,31 @@
         {
             this.InitializeComponent();
 
-            this.directoryTextBox.Text = @"Z:\Series\BBT";
+            this.directoryTextBox.Text = this.GetLastOpenedDirectory();
             this.replacementComboBox.Text = ".";
             this.patternComboBox.Text = ".";
 
             this.fileListBox.DataSource = this.files;
 
             this.RebindFiles();
+        }
+
+        private string GetLastOpenedDirectory()
+        {
+            var lastDirectory = Settings.Default.LastOpenedDirectory;
+
+            if (string.IsNullOrEmpty(lastDirectory))
+            {
+                var result = MessageBox.Show("Could not retrieve last used folder. Do you want to choose one now?", "Ops!", MessageBoxButtons.YesNo);
+
+                if (result == DialogResult.Yes)
+                {
+                    this.BrowseButtonClick(this, null);
+                    lastDirectory = this.directoryTextBox.Text;
+                }
+            }
+
+            return lastDirectory;
         }
 
         /// <summary>
@@ -197,6 +217,17 @@
             this.RebindFiles();
 
             this.SetStatus(ApplicationStatus.Ready);
+        }
+
+        /// <summary>
+        /// Namer form closing.
+        /// </summary>
+        /// <param name="sender">The sender.</param>
+        /// <param name="e">The e.</param>
+        private void NamerFormClosing(object sender, FormClosingEventArgs e)
+        {
+            Settings.Default.LastOpenedDirectory = this.directoryTextBox.Text;
+            Settings.Default.Save();
         }
     }
 }
